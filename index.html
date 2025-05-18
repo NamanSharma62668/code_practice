@@ -1,0 +1,67 @@
+
+<!-- Bhai yaha code edtor ko bata rhe ki html file hai -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<!-- Yaha se main kaam shuru hoga , body start -->
+
+<body background="black">
+    <header>
+        <h1>Its About Ourself</h1><!-- Ye heading tag hai -->
+        
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to Our Website</h2><!-- Swagat kr rhe user ka apni website mai, section ta ka use krke-->
+            
+            <p>This page is all about us and our journey///.kylp.</p>
+        </section>
+<!-- Yha hamari profiles pictures show hogi-->
+
+        <section class="profiles">
+            <div class="profile">
+                <a href="Naman .html" target="_blank">
+                    <img src="Naman.jpg" alt="Naman Sharma"/>
+                </a>
+                
+                <h3>Naman Sharma</h3>
+            </div>
+            <div class="profile">
+                <a href="nitish.html" target="_blank">
+                    <a href='Nitish.jpg' target='_blank'><img src='nitish.jpg'  alt='Nitish Dhiman'/></a>
+                </a>
+                <h3>Dhiman Sahab</h3>
+            </div>
+            <div class="profile">
+                <a href="kartikai.html" target="_blank">
+                    <img src="kartikai.jpg" alt="Kartikai Sharma">
+                </a>
+                <h3>Kartikai Sharma</h3>
+            </div>
+        </section>
+        <!-- Section ka kaam kahatm -->
+    </main>
+<!-- Script slect ki query daal ke -->
+ 
+
+    <script>
+             
+        window.onload = function() {
+            document.querySelector('.welcome-section').classList.add('loaded');
+            document.querySelector('.profiles').classList.add('loaded');
+        }
+        
+    </script>
+    <!--BHai ye javascript ka use kiya hai , iss script ka kaam ye hai ki jab hi idex page load hoga then ye query css ki transitions ko trigger karegi jo ki hamne profile section or wlcome section mai use kari hai-->
+        
+    <!--Script ka kaam khatam-->
+    
+</body>
+</html>

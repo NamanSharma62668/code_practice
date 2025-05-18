@@ -1,0 +1,190 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #0073e6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+/* Profile Section */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+}
+
+header h1 {
+    margin: 0;
+}
+header h6{
+    margin: 0px;
+}
+
+header h3 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: #0073e6;
+    margin: 20px 0;
+}
+
+.subheading {
+    color: #0073e6;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.Sports{
+    color: #0073e6;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+
+p {
+    font-size: 1.1rem;
+    
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #0073e6;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #0073e6;
+    color: white;
+}
+
+td {
+    background: #f9f9f9;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.skills {
+    color: #0073e6;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.progress {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+.skills{
+    color: #0073e6;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.badge1 {
+    background-color: #ff9800;  /* Professional orange shade */
+    color: white;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+/*Master skill*/
+
+
+.badge {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a3a34a; /* Light beige color for paper/cotton look */
+    color: #333;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Gives a more casual, handmade feel */
+}
+
+.badge:hover {
+    transform: scale(1.1) rotate(-2deg); /* Slight rotation for a natural, handmade look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer h3, footer h4 {
+    margin: 10px 0;
+}
+
+/* Social Media Links */
+ul {
+    list-style: horizontal;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    
+}
+
+a img {
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}

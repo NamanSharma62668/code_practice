@@ -1,0 +1,153 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e2e8f0);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Welcome section styles */
+.welcome-section {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(95, 94, 94, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    text-align: center;
+}
+
+.welcome-section.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.welcome-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Profiles section styles */
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: transparent; /* Initially transparent */
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: background-color 1s ease-in-out, opacity 1s ease-in-out;
+    transition-delay: 2s; /* Wait for welcome section to complete */
+}
+
+.profiles.loaded {
+    background-color: #000; /* Black background appears */
+    opacity: 1;
+}
+
+.profile {
+    text-align: center;
+    margin: 20px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.profile img {
+    width: 250px; /* Increased size */
+    height: 250px; /* Increased size */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.7);
+    opacity: 0.8;
+}
+
+/* Profile text styles */
+.profile h3 {
+    margin-top: 10px;
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Loaded state for profiles */
+.profiles.loaded .profile {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.profiles.loaded .profile h3 {
+    opacity: 1;
+}
+
+.profiles.loaded .profile:nth-child(1) {
+    transition-delay: 2.3s; /* Delay after black background appears */
+}
+
+.profiles.loaded .profile:nth-child(2) {
+    transition-delay: 2.6s; /* Delay after black background appears */
+}
+
+.profiles.loaded .profile:nth-child(3) {
+    transition-delay: 2.9s; /* Delay after black background appears */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .welcome-section {
+        padding: 20px;
+    }
+
+    .welcome-section h2 {
+        font-size: 2rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+
+    .profile img {
+        width: 200px; /* Adjusted for smaller screens */
+        height: 200px; /* Adjusted for smaller screens */
+    }
+}
